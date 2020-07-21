@@ -66,11 +66,39 @@ function validate() {
    if(questionNumber === 3) {
       content.setAttribute("style", "color: black");
       timeLeft ++;
-      questionTen();
+      questionThree();
    };
    if(questionNumber === 4) {
       content.setAttribute("style", "color: black");
       timeLeft ++;
+      questionFour();
+   };
+   if(questionNumber === 5) {
+      content.setAttribute("style", "color: black");
+      questionFive();
+   };
+   if(questionNumber === 6) {
+      content.setAttribute("style", "color: black");
+      questionSix();
+   };
+   if(questionNumber === 7) {
+      content.setAttribute("style", "color: black");
+      questionSeven();
+   };
+   if(questionNumber === 8) {
+      content.setAttribute("style", "color: black");
+      questionEight();
+   };   
+   if(questionNumber === 9) {
+      content.setAttribute("style", "color: black");
+      questionNine();
+   };
+   if(questionNumber === 10) {
+      content.setAttribute("style", "color: black");
+      questionTen();
+   };
+   if(questionNumber === 11) {
+      content.setAttribute("style", "color: black");
       finishQuiz();
    };
 
@@ -119,7 +147,7 @@ function questionOne() {
    });
 
    ans3 = document.createElement("BUTTON");
-   ans3.innerHTML = "Number";
+   ans3.innerHTML = "Vanilla";
    buttons.appendChild(ans3);
    ans3.addEventListener("click", function () {
       incorrect();
@@ -140,31 +168,31 @@ function questionTwo() {
    ans3.remove();
    ans4.remove();
    header.textContent = "Question 2:"
-   content.textContent = "Using ___ statement is how you test for a specific condition.";
+   content.textContent = "When referring to the DOM what does the 'D' stand for?";
        
    ans1 = document.createElement("button");
-   ans1.innerHTML = "For";
+   ans1.innerHTML = "delicious";
    buttons.appendChild(ans1);
    ans1.addEventListener("click", function () {
       incorrect();
    });
  
    ans2 = document.createElement("button");
-   ans2.innerHTML = "If";
+   ans2.innerHTML = "document";
    buttons.appendChild(ans2);
    ans2.addEventListener("click", function () {
       correct();
    });
 
    ans3 = document.createElement("button");
-   ans3.innerHTML = "Select";
+   ans3.innerHTML = "daddy";
    buttons.appendChild(ans3);
    ans3.addEventListener("click", function () {
       incorrect();
    });
 
    ans4 = document.createElement("button");
-   ans4.innerHTML = "Switch";
+   ans4.innerHTML = "digital";
    buttons.appendChild(ans4);
    ans4.addEventListener("click", function () {
       incorrect();
@@ -178,31 +206,259 @@ function questionThree() {
    ans3.remove();
    ans4.remove();
    header.textContent = "Question 3:"
-   content.textContent = "Question 3";
+   content.textContent = "The three basic building block languages of the World Wide Web are: HTML, CSS, and ______?";
        
    ans1 = document.createElement("button");
-   ans1.innerHTML = "wrong";
+   ans1.innerHTML = "Javascript";
    buttons.appendChild(ans1);
    ans1.addEventListener("click", function () {
-      incorrect();
+      correct();
    });
  
    ans2 = document.createElement("button");
-   ans2.innerHTML = "If";
+   ans2.innerHTML = "Node";
    buttons.appendChild(ans2);
    ans2.addEventListener("click", function () {
-      correct();
+      incorrect();
    });
 
    ans3 = document.createElement("button");
-   ans3.innerHTML = "Select";
+   ans3.innerHTML = "Server";
    buttons.appendChild(ans3);
    ans3.addEventListener("click", function () {
       incorrect();
    });
 
    ans4 = document.createElement("button");
-   ans4.innerHTML = "Switch";
+   ans4.innerHTML = "AJAX";
+   buttons.appendChild(ans4);
+   ans4.addEventListener("click", function () {
+      incorrect();
+   });
+}
+
+// Question 4
+function questionFour() {
+   ans1.remove();
+   ans2.remove();
+   ans3.remove();
+   ans4.remove();
+   header.textContent = "Question 4:"
+   content.textContent = "In Javascript an array is classified as _______.";
+       
+   ans1 = document.createElement("button");
+   ans1.innerHTML = "a number";
+   buttons.appendChild(ans1);
+   ans1.addEventListener("click", function () {
+      incorrect();
+   });
+ 
+   ans2 = document.createElement("button");
+   ans2.innerHTML = "an object";
+   buttons.appendChild(ans2);
+   ans2.addEventListener("click", function () {
+      correct();
+   });
+
+   ans3 = document.createElement("button");
+   ans3.innerHTML = "a boolean";
+   buttons.appendChild(ans3);
+   ans3.addEventListener("click", function () {
+      incorrect();
+   });
+
+   ans4 = document.createElement("button");
+   ans4.innerHTML = "a string";
+   buttons.appendChild(ans4);
+   ans4.addEventListener("click", function () {
+      incorrect();
+   });
+}
+
+// Question 5
+function questionFive() {
+   ans1.remove();
+   ans2.remove();
+   ans3.remove();
+   ans4.remove();
+   header.textContent = "Question 5:"
+   content.textContent = "Which operator is used to concatenate multiple strings?";
+       
+   ans1 = document.createElement("button");
+   ans1.innerHTML = "*";
+   buttons.appendChild(ans1);
+   ans1.addEventListener("click", function () {
+      incorrect();
+   });
+ 
+   ans2 = document.createElement("button");
+   ans2.innerHTML = "-";
+   buttons.appendChild(ans2);
+   ans2.addEventListener("click", function () {
+      incorrect();
+   });
+
+   ans3 = document.createElement("button");
+   ans3.innerHTML = "+";
+   buttons.appendChild(ans3);
+   ans3.addEventListener("click", function () {
+      correct();
+   });
+
+   ans4 = document.createElement("button");
+   ans4.innerHTML = "/";
+   buttons.appendChild(ans4);
+   ans4.addEventListener("click", function () {
+      incorrect();
+   });
+}
+
+// Question 6
+function questionSix() {
+   ans1.remove();
+   ans2.remove();
+   ans3.remove();
+   ans4.remove();
+   header.textContent = "Question 6:"
+   content.textContent = "If/Else and Switch are types of _______ statements.";
+       
+   ans1 = document.createElement("button");
+   ans1.innerHTML = "ternary";
+   buttons.appendChild(ans1);
+   ans1.addEventListener("click", function () {
+      incorrect();
+   });
+ 
+   ans2 = document.createElement("button");
+   ans2.innerHTML = "conditional";
+   buttons.appendChild(ans2);
+   ans2.addEventListener("click", function () {
+      correct();
+   });
+
+   ans3 = document.createElement("button");
+   ans3.innerHTML = "value";
+   buttons.appendChild(ans3);
+   ans3.addEventListener("click", function () {
+      incorrect();
+   });
+
+   ans4 = document.createElement("button");
+   ans4.innerHTML = "loop";
+   buttons.appendChild(ans4);
+   ans4.addEventListener("click", function () {
+      incorrect();
+   });
+}
+
+// Question 7
+function questionSeven() {
+   ans1.remove();
+   ans2.remove();
+   ans3.remove();
+   ans4.remove();
+   header.textContent = "Question 7:"
+   content.textContent = "Which of the following is NOT a current or former mosaic web browswer?";
+       
+   ans1 = document.createElement("button");
+   ans1.innerHTML = "Netscape";
+   buttons.appendChild(ans1);
+   ans1.addEventListener("click", function () {
+      incorrect();
+   });
+ 
+   ans2 = document.createElement("button");
+   ans2.innerHTML = "Chrome";
+   buttons.appendChild(ans2);
+   ans2.addEventListener("click", function () {
+      incorrect();
+   });
+
+   ans3 = document.createElement("button");
+   ans3.innerHTML = "Safari";
+   buttons.appendChild(ans3);
+   ans3.addEventListener("click", function () {
+      incorrect();
+   });
+
+   ans4 = document.createElement("button");
+   ans4.innerHTML = "Monster";
+   buttons.appendChild(ans4);
+   ans4.addEventListener("click", function () {
+      correct();
+   });
+}
+
+// Question 8
+function questionEight() {
+   ans1.remove();
+   ans2.remove();
+   ans3.remove();
+   ans4.remove();
+   header.textContent = "Question 8:"
+   content.textContent = "Local and session storage make use of the ______ object.";
+       
+   ans1 = document.createElement("button");
+   ans1.innerHTML = "domain";
+   buttons.appendChild(ans1);
+   ans1.addEventListener("click", function () {
+      incorrect();
+   });
+ 
+   ans2 = document.createElement("button");
+   ans2.innerHTML = "window";
+   buttons.appendChild(ans2);
+   ans2.addEventListener("click", function () {
+      correct();
+   });
+
+   ans3 = document.createElement("button");
+   ans3.innerHTML = "browser";
+   buttons.appendChild(ans3);
+   ans3.addEventListener("click", function () {
+      incorrect();
+   });
+
+   ans4 = document.createElement("button");
+   ans4.innerHTML = "mozilla";
+   buttons.appendChild(ans4);
+   ans4.addEventListener("click", function () {
+      incorrect();
+   });
+}
+
+// Question 9
+function questionNine() {
+   ans1.remove();
+   ans2.remove();
+   ans3.remove();
+   ans4.remove();
+   header.textContent = "Question 9:"
+   content.textContent = "The Nintendo Entertainment System was released in the US in 1985; in which Japanese city is the Nintendo home office located?";
+       
+   ans1 = document.createElement("button");
+   ans1.innerHTML = "Tokyo";
+   buttons.appendChild(ans1);
+   ans1.addEventListener("click", function () {
+      incorrect();
+   });
+ 
+   ans2 = document.createElement("button");
+   ans2.innerHTML = "Okinawa";
+   buttons.appendChild(ans2);
+   ans2.addEventListener("click", function () {
+      incorrect();
+   });
+
+   ans3 = document.createElement("button");
+   ans3.innerHTML = "Kyoto";
+   buttons.appendChild(ans3);
+   ans3.addEventListener("click", function () {
+      correct();
+   });
+
+   ans4 = document.createElement("button");
+   ans4.innerHTML = "Hanafuda";
    buttons.appendChild(ans4);
    ans4.addEventListener("click", function () {
       incorrect();
@@ -216,31 +472,31 @@ function questionTen() {
    ans3.remove();
    ans4.remove();
    header.textContent = "Question 10:"
-   content.textContent = "Question 10";
+   content.textContent = "Objects can have both properties and _____.";
        
    ans1 = document.createElement("button");
-   ans1.innerHTML = "wrong";
+   ans1.innerHTML = "materials";
    buttons.appendChild(ans1);
    ans1.addEventListener("click", function () {
       incorrect();
    });
  
    ans2 = document.createElement("button");
-   ans2.innerHTML = "wrong";
+   ans2.innerHTML = "marmalades";
    buttons.appendChild(ans2);
    ans2.addEventListener("click", function () {
       incorrect(); 
    });
 
    ans3 = document.createElement("button");
-   ans3.innerHTML = "correct";
+   ans3.innerHTML = "methods";
    buttons.appendChild(ans3);
    ans3.addEventListener("click", function () {
       correct();
    });
 
    ans4 = document.createElement("button");
-   ans4.innerHTML = "wrong";
+   ans4.innerHTML = "mothers";
    buttons.appendChild(ans4);
    ans4.addEventListener("click", function () {
       incorrect();
@@ -269,7 +525,7 @@ function finishQuiz() {
    });
 }
 
-//Display the high schore records with options to try again or clear the scores
+//Display the high score records with options to try again or clear the scores
 function displayScores() {
    clearInterval (timerInterval);
    ans1.remove();
