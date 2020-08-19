@@ -1,5 +1,4 @@
 # codeQuiz
-Homework 4 Coding Quiz
 
 codeQuiz is an application to test your knowledge of Javascript, with a couple of Easter Egg questions in the mix. 
 
